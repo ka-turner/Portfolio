@@ -1,0 +1,336 @@
+html {
+    background-color: #ECECEC;
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding-left: 1em;
+    font-size: 3em;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    padding-right: 5em;
+}
+
+header li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 2em;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+#header-gradient {
+    background-image: linear-gradient(#ECECEC, #90CCF4);
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me {
+    background-color: #90CCF4;
+    padding: 2em 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 1em; */
+}
+
+#about-me h2 {
+    font-size: 5em;
+    color: navy;
+}
+
+#about-me .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#about-me p {
+    border: 1px solid navy;
+    background-color: rgba(0,0,128,0.2);
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1.5em;
+    height: 75%;
+    width: 75%;
+    color: navy;
+}
+
+#about-me img {
+    width: 65%;
+}
+
+#about-me-gradient {
+    background-image: linear-gradient(#90CCF4, #F78888);
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-list {
+    background-color: #F78888;
+    padding: 2em 2.5em;
+}
+
+#project-list h2 {
+    font-size: 3em;
+    color: black;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    /* -webkit-transform: rotate(-45deg); */
+    margin-right: 1em;
+}
+
+.project-info {
+    width: 90%;
+    align-items: flex-start;
+    display: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.project-img {
+    width: 20%;
+    margin: 0 3em;
+}
+
+.project-description {
+    width: 40%;
+    margin: 0 3em;
+}
+
+.project-description-heading {
+    margin: 0;
+}
+
+.project-languages {
+    margin: 0 3em;
+    width: 40%;
+}
+
+.project-languages-heading {
+    margin: 0;
+}
+
+#project-list-gradient {
+    background-image: linear-gradient(#F78888, #F3D250);
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-line {
+    height: 2px;
+    width: 95%;
+    background-color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #F3D250;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 2em;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email h3 {
+    margin-right: .5em;
+}
+
+.email a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.right {
+    width: 50%;
+    text-align: center;
+}
+
+/* Contact Page */
+#send-email {
+    background-color: #90CCF4;
+    padding: 2em 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#send-email h2 {
+    font-size: 3em;
+}
+
+#send-email form label {
+    font-size: 1.3em;
+}
+
+#send-email #message {
+    display: flex;
+}
+
+#send-email #message label {
+    padding-right: 5px;
+}
+
+#send-email #submit-button {
+    display: flex;
+    justify-content: center;
+}
+#send-email #submit-button input {
+    font-size: 1.5em;
+    padding: .2em;
+}
+
+#send-email-gradient {
+    background-image: linear-gradient(#90CCF4, #F3D250);
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        padding-left: 0;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    header li {
+        padding: 0 1em;
+    }
+
+    #about-me {
+        flex-direction: column;
+        padding: 2em 0;
+    }
+
+    #about-me h2 {
+        font-size: 3em;
+        margin: .25em;
+    }
+
+    #about-me .left{
+        width: 95%;
+    }
+
+    #about-me p {
+        font-size: 1.5em;
+    }
+
+    #about-me .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-me img {
+        width: 95%;
+    }
+
+    .project-info {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    .project-img {
+        width: 75%;
+        margin: 1em 0;
+    }
+
+    .project-description {
+        width: 95%;
+        margin: 0 3em;
+    }
+
+    .project-description-heading {
+        margin: 1em 0;
+    }
+
+    .project-languages {
+        margin: 0 3em;
+        width: 95%;
+    }
+    
+    .project-languages-heading {
+        margin: 0;
+    }
+
+    footer {
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 2em;
+    }
+
+    .left h2 {
+        margin: 0;
+    }
+
+    .right {
+        width: 100%;
+        text-align: left;
+    }
+
+    .right h2 {
+        margin: 0;
+        padding-bottom: 1em;
+    }
+
+    /* Contact Page */
+    #send-email {
+        padding: 0;
+    }
+
+    #send-email form textarea {
+        width: 20em;
+        height: 15em;
+    }
+}

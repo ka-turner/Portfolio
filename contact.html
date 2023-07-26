@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kim Turner | Portfolio | Contact</title>
+        <link href="./style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header>
+            <div id="header-logo">
+                <!-- Insert small image logo 50px x 50px -->
+                <h1>Kim Turner</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="header-gradient">
+            <div class="horizontal-line"></div>
+        </div>
+
+        <main>
+
+            <section id="send-email">
+                <h2>Send Me an Email!</h2>
+
+                <form action="mailto:kmtrnr30@yahoo.com" method="post" enctype="text/plain">
+                    <div id="name" class="form-part">
+                        <label for="sender-name">Your Name:</label>
+                        <input type="text" name="name" id="sender-name" required>
+                    </div>
+                    <br>
+                    <div id="email" class="form-part">
+                        <label for="sender-email">Your Email:</label>
+                        <input type="text" name="email" id="sender-email" required>
+                    </div>
+                    <br>
+                    <div id="message" class="form-part">
+                        <label for="sender-message">Message:</label>
+                        <textarea id="sender-message" name="message" rows="10" cols="100" required></textarea>
+                    </div>
+                    <br>
+                    <div id="submit-button" class="form-part">
+                        <input type="submit" value="Send">
+                    </div>
+                    </form>
+            </section>
+            
+            <div id="send-email-gradient">
+                <div class="horizontal-line"></div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="left">
+                <h2>Kim Turner</h2>
+                <div class="email">
+                    <h3>Email: </h3>
+                    <a href="mailto:kmtrnr30@yahoo.com">kmtrnr30@yahoo.com</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <h2>Social</h2>
+            </div>
+        </footer>
+
+    </body>
+</html>
